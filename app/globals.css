@@ -1,6 +1,12 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -119,4 +125,9 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+html, body{
+  height: 100%;
+  color: white;
 }
